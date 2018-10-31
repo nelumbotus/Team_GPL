@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class ShowDoorlock : MonoBehaviour {
 
+    // doorlock 관련 ui
     public GameObject doorlock;
-    public GameObject player;
     private bool is_shown;
-    private GameObject target;
+
+  //  private GameObject target;
 
     void Start ()
     {
-        doorlock.SetActive(false);
         is_shown = false;
     }
 
@@ -20,11 +20,12 @@ public class ShowDoorlock : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.Escape) && is_shown)
         {
+            GameManager.Instance.currGameState = GameManager.GameStates.Idle;
             doorlock.SetActive(false);
-            player.SetActive(true);
             is_shown = false;
         }
 
+        /*
         if (Input.GetMouseButtonDown(0) && !is_shown)
         {
             target = GetClickedObject();
@@ -34,8 +35,16 @@ public class ShowDoorlock : MonoBehaviour {
                 is_shown = true;
             }
         }
+        */
+    }
+    private void OnMouseDown()
+    {
+        GameManager.Instance.currGameState = GameManager.GameStates.LookupObj;
+        doorlock.SetActive(true);
+        is_shown = true;
     }
 
+    /*
     private GameObject GetClickedObject() {
         RaycastHit hit;
         GameObject target = null; 
@@ -56,6 +65,7 @@ Debug.Log(Camera.main);
         return target; 
 
     } 
+    */
 
 }
 
