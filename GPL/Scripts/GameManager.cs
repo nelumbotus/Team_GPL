@@ -13,6 +13,8 @@ public class GameManager : Singleton<GameManager> {
     public Text text;
     public ArcBallUI ui;
 
+    public Text mouseOverText;
+
     //
     Vector3 clickRayVector;
 
@@ -40,6 +42,7 @@ public class GameManager : Singleton<GameManager> {
     void Update () {
         ClickControl();
 
+        //커서 컨트롤 
         if(currGameState == GameStates.Idle) {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
