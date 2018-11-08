@@ -28,7 +28,7 @@ Team GPL - Project guide
 ## LICENSE - MIT 
 - 기업이 사용하기를 바라지 않으며 기여한 내용이 계속해서 공개될 필요가 없으므로 MIT 라이선스를 사용하였습니다. 
 
-# ----------------FOR ENGLISH Please!-------------------
+# ----------------FOR ENGLISH PLZ~!-------------------
 
 ## Team GPL(Gorgeous Precious Lovely) - Project guide ( 
 
