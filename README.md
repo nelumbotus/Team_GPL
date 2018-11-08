@@ -27,3 +27,37 @@ Team GPL - Project guide
     
 ## LICENSE - MIT 
 - 기업이 사용하기를 바라지 않으며 기여한 내용이 계속해서 공개될 필요가 없으므로 MIT 라이선스를 사용하였습니다. 
+
+# ------------------------------
+
+## Team GPL(Gorgeous Precious Lovely) - Project guide ( 
+
+This repository is used for opening and distributing team project's outcome. The team project was conducted in "Open Source Software Programming" class. It started in 2018/8/28 and ended in 2018/12/6. 
+
+- - - 
+
+Team GPL 
+----------------
+
+This documentation explains about overall contents of the project. Details are from class material.( OSS_using_in_right_way.pptx Link:[DropBox][DropBoxLink] : https://www.dropbox.com/s/yq7scwgjuovnirg/%5BOSS%5D%203-1%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EB%B0%94%EB%A5%B4%EA%B2%8C%20%EC%82%AC%EC%9A%A9%20%ED%95%98%EA%B8%B0.pptx?dl=0 *Material is written in Korean and you must download it to see the details.* )
+
+## README 
+
+- **The purpose and how to use of the project**
+    - What is this project for? : This project is for distributing code that made through team project in opensource. Code's contents contain function for making room escape game.
+    - Why this project is useful? : Features that are needed to develop games are implemented. If you want to develop a game in the future, it will be useful for you.
+    - What kind of people like to use this project? : It's good for people someone found problems with their programming that the basis of your inventory or game. And for someone out there surfing Internet for trouble shooting in the implementation of game.
+    - How can this project operate? : If you need a portion of this project, you just download or copy it and paste it on your code. Or someone wanting to use the whole function of this project, clone this repo and enjoy your game making process.
+- **How to start project**
+    - Are there prerequisites for installing and using the project? : It needs installation of unity version over 5.5.1x. And also if you want to use the whole function, it's basic implementation was done on ArchVizPRO Interior Vol.6. So installing this means your ready for it.( but this is an charged asset ) We recommend you to just using the portion of code in your code.
+    - How can user install, use, test? : **NEED HELP!!!**
+- **Copyright, License information**
+    - Which license are we using? : MIT LICENSE.
+    - Where can user check the detail of license? : Please refer our project's LICENSE file.
+    - Is there any constarints for using this project? : NO! 
+- **External Resource Information**
+    - What are the sources and distribution licenses? : **NEED HELP!!!**
+    
+## LICENSE - MIT
+- We used the MIT license because we didn't want to use it and we didn't have to keep the contributions open.
+    
