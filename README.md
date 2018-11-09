@@ -2,8 +2,6 @@
 
 이 레퍼지토리는 국민대학교 소프트웨어학부에서 진행중인 "오픈소스 소프트웨어" 수업의 팀 프로젝트를 위해서 사용됩니다. 오픈소스 소프트웨어는 2018/8/28 일에 시작하여 2018/12/6 일에 끝납니다. 
 
----------------------
-
 Team GPL ![Github](https://img.shields.io/badge/opensourcesoftware-1%2C2class-red.svg)
 --------------------------------------
 국민대학교 소프트웨어학부에서 2018-2학기에 진행된 '오픈소스 소프트웨어'수업의 GPL팀의 전체 프로젝트 설명입니다. 상세 내용은 < OSS SLIDE 3,오픈소스바르게사용하기.pdf >의 내용을 참고하여 작성되었습니다. 
@@ -29,13 +27,11 @@ Team GPL ![Github](https://img.shields.io/badge/opensourcesoftware-1%2C2class-re
 ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
 - 기업이 사용하기를 바라지 않으며 기여한 내용이 계속해서 공개될 필요가 없으므로 MIT 라이선스를 사용하였습니다. 
 
-# ----------------FOR ENGLISH PLZ~!-------------------
+# ----------------ENGLISH-------------------
 
 ## Team GPL(Gorgeous Precious Lovely) - Project guide ( 
 
 This repository is used for opening and distributing team project's outcome. The team project was conducted in "Open Source Software Programming" class. It started in 2018/8/28 and ended in 2018/12/6. 
-
-- - - 
 
 Team GPL 
 ----------------
