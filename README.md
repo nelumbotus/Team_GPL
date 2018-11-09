@@ -4,7 +4,7 @@
 
 ---------------------
 
-Team GPL - Project guide
+Team GPL https://img.shields.io/badge/opensourcesoftware-1%2C2class-red.svg
 --------------------------------------
 국민대학교 소프트웨어학부에서 2018-2학기에 진행된 '오픈소스 소프트웨어'수업의 GPL팀의 전체 프로젝트 설명입니다. 상세 내용은 < OSS SLIDE 3,오픈소스바르게사용하기.pdf >의 내용을 참고하여 작성되었습니다. 
 
@@ -26,6 +26,7 @@ Team GPL - Project guide
     - 각각의 출처 및 배포 라이선스는 무엇인가 ? : **NEED HELP!!**
     
 ## LICENSE - MIT 
+![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
 - 기업이 사용하기를 바라지 않으며 기여한 내용이 계속해서 공개될 필요가 없으므로 MIT 라이선스를 사용하였습니다. 
 
 # ----------------FOR ENGLISH PLZ~!-------------------
