@@ -36,7 +36,8 @@ This repository is used for opening and distributing team project's outcome. The
 Team GPL 
 ----------------
 
-This documentation explains about overall contents of the project. Details are from class material.( OSS_using_in_right_way.pptx Link:[DropBox][DropBoxLink] : https://www.dropbox.com/s/yq7scwgjuovnirg/%5BOSS%5D%203-1%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EB%B0%94%EB%A5%B4%EA%B2%8C%20%EC%82%AC%EC%9A%A9%20%ED%95%98%EA%B8%B0.pptx?dl=0 *Material is written in Korean and you must download it to see the details.* )
+This documentation explains about overall contents of the project. Details are from class material.
+- ( OSS_using_in_right_way.pptx Link:[DropBox][DropBoxLink] : https://www.dropbox.com/s/yq7scwgjuovnirg/%5BOSS%5D%203-1%20%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%20%EB%B0%94%EB%A5%B4%EA%B2%8C%20%EC%82%AC%EC%9A%A9%20%ED%95%98%EA%B8%B0.pptx?dl=0 *Material is written in Korean and you must download it to see the details.* )
 
 ## README 
 
