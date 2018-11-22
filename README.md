@@ -26,7 +26,7 @@ Team GPL ![Github](https://img.shields.io/badge/opensourcesoftware-1%2C2class-re
 ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
 - 기업이 사용하기를 바라지 않으며 기여한 내용이 계속해서 공개될 필요가 없으므로 MIT 라이선스를 사용하였습니다. 
 
-# ----------------ENGLISH-------------------
+#### ----------------ENGLISH-------------------
 
 ## Team GPL(Gorgeous Precious Lovely) - Project guide ( 
 
