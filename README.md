@@ -28,7 +28,7 @@ Team GPL ![Github](https://img.shields.io/badge/opensourcesoftware-1%2C2class-re
 
 #### ----------------ENGLISH-------------------
 
-## Team GPL(Gorgeous Precious Lovely) - Project guide ( 
+## Team GPL(Gorgeous Precious Lovely) - Project guide 
 
 This repository is used for opening and distributing team project's outcome. The team project was conducted in "Open Source Software Programming" class. It started in 2018/8/28 and ended in 2018/12/6. 
 
@@ -56,5 +56,5 @@ This documentation explains about overall contents of the project. Details are f
     
 ## LICENSE - MIT
 ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
-- We used the MIT license because we didn't want to use it and we didn't have to keep the contributions open.
+- We used the MIT license because we didn't have to keep the contributions open.
     
