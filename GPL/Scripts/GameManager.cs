@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 
 // 다른 스크립트에서 GameManager 사용 : GameManager.Instance 로 public변수와 메소드에 접근 가능
 
 public class GameManager : Singleton<GameManager> {
     public GameObject UI;
-    
+    public float rayDistance = 5.0f;
+
+    //public bool PW_SUCCESS = false; // 게임매니저에 boolean으로 pw를 맞췄는지 못맞췄는지를 확인해준다.
+    //public int count_door = 0; // 문 갯수 세기, 시작시 : 0, 중문 통과후 : 1, 마지막문 : 2.
+    //Acrball 에서 raycast (in RayCastFromMouse)
 
     //Acrball 에서 raycast (in RayCastFromMouse)
     public Text text;
@@ -17,6 +22,9 @@ public class GameManager : Singleton<GameManager> {
 
     //
     Vector3 clickRayVector;
+    public GameObject currHitObject;
+
+    public GameObject gameClearUI;
 
     public enum GameStates
     {
@@ -24,11 +32,28 @@ public class GameManager : Singleton<GameManager> {
         LookupObj,
     };
 
+    public enum PuzzleStates
+    {
+        start,
+        circuit_completed,
+        safebox_opened,
+        memo_completed,
+        lamp_found
+    }
+
+
     public GameStates currGameState;
+    PuzzleStates currPuzzleState;
 
     private void Awake()
     {
         currGameState = GameStates.Idle;
+        currPuzzleState = PuzzleStates.start;
+    }
+
+    public PlayableDirector timeline;
+    public bool IsTimelinePlaying(){
+        return timeline.state == PlayState.Playing;
     }
 
     // Use this for initialization
@@ -43,7 +68,7 @@ public class GameManager : Singleton<GameManager> {
         ClickControl();
 
         //커서 컨트롤 
-        if(currGameState == GameStates.Idle) {
+        if (currGameState == GameStates.Idle) {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
@@ -60,24 +85,38 @@ public class GameManager : Singleton<GameManager> {
             RaycastHit hit;
             //var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             var ray = Camera.main.ViewportPointToRay(clickRayVector);
-            Debug.DrawRay(ray.origin, ray.direction);
-            if (Physics.Raycast(ray, out hit))
+            Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.red);
+            if (Physics.Raycast(ray, out hit) && hit.distance < rayDistance)
             {
                 GameObject hitObject = hit.transform.gameObject;
                 Debug.Log(hitObject);
 
-                if (hitObject != null && hitObject.tag == "Selectable")
+                if (hitObject != null && (hitObject.tag == "SelectableWithObtain" || hitObject.tag == "SelectableWithoutObtain" || hitObject.tag == "Unselectable") )
                 {
                    
                     ui.setTargetGameObject(hitObject);
+                    currHitObject = hitObject;
                     
                 }
-                text.text = hitObject.name;
+
+                if(hitObject.GetComponent<Description>() != null)
+                {
+                    text.text = hitObject.GetComponent<Description>().text;
+                }
+                else 
+                {
+                    text.text = hitObject.name;
+                }
             }
         }
     }
 
     void EscapeControl() {
      
+    }
+
+    public void gameClear() {
+        Debug.Log("game clear");
+        gameClearUI.SetActive(true);
     }
 }

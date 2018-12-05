@@ -1,12 +1,6 @@
-/*
-램프에 있는 PointLight 오브젝트에 이 스크립트를 부착합니다.
+﻿//처음 누르면 회로가 뜹니다.
+//회로를 완성하면, 불이 깜밖꺼립니다.
 
-램프(pointLight)클릭시, circuit퍼즐이 뜹니다, 퍼즐을 해결 한 뒤에 램프를 다시 클릭하면
-모스부호에 맞게 light가 깜빡거립니다.
-
-(point light클릭이 잘 되도록, collider크기를 키워주세요 ..)
-
-*/
 
 using System.Collections;
 using System.Collections.Generic;
@@ -31,6 +25,7 @@ public class LightController : MonoBehaviour {
 	}
 
     public void OnMouseDown(){
+        Debug.Log("click light");
 		if (!GameObject.Find("Circuit").GetComponent<CircuitManager>().complete){
 		GameObject.Find("Circuit").GetComponent<CircuitManager>().ScaleToOne();
 		}
@@ -58,7 +53,7 @@ public class LightController : MonoBehaviour {
 	}
 
 	public void LightOn(){
-		lgt.intensity = 7;
+		lgt.intensity = 4;
 	}
 	public void LightOff(){
 		lgt.intensity = 0.1f;

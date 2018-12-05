@@ -1,7 +1,3 @@
-/*
-금고에 붙입니다.
-금고 클릭시 도어락 UI창이 켜집니다.
-*/
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +8,7 @@ public class doorlock_click : MonoBehaviour {
     public GameObject doorlock;
     public void OnMouseDown()
     {
+        GameManager.Instance.currGameState = GameManager.GameStates.LookupObj;
         doorlock.SetActive(true);
     }
     // Use this for initialization
@@ -21,6 +18,9 @@ public class doorlock_click : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if(Input.GetKey(KeyCode.Q)) {
+            doorlock.SetActive(false);
+            GameManager.Instance.currGameState = GameManager.GameStates.Idle;
+        }
 	}
 }

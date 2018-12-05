@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class Description : MonoBehaviour {
     public string text;
+    public string dialText;
 
 	// Use this for initialization
 	void Start () {
@@ -20,11 +21,16 @@ public class Description : MonoBehaviour {
 	}
     private void OnMouseOver()
     {
-        GameManager.Instance.mouseOverText.text = text;
+        if(GameManager.Instance.currGameState == GameManager.GameStates.Idle)
+            GameManager.Instance.mouseOverText.text = text;
     }
     private void OnMouseExit()
     {
         GameManager.Instance.mouseOverText.text = "";
+    }
+    private void OnMouseDown()
+    {
+        GameManager.Instance.gameObject.GetComponent<Dialoguemanager>().clicked(dialText);
     }
 
 

@@ -27,7 +27,8 @@ public class RayCastFromMouse : MonoBehaviour {
                 {
                     ui.setTargetGameObject(hit.transform.gameObject);
                 }
-                text.text = hit.transform.gameObject.name;
+
+                text.text = hit.transform.gameObject.GetComponent<Description>().text;
             }
         }
     }

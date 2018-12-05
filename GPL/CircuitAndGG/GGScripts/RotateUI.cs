@@ -1,8 +1,3 @@
-/*
-circuit Image의 child Image 16개(Line, Curve)에 모두 부착되어있는 스크립트 입니다 (프리팹을 사용해주세요)
-UI가 클릭되면 일정 시간동안, 90도 회전합니다.
-*/
-
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

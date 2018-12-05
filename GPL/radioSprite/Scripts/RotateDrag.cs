@@ -1,3 +1,6 @@
+    //기능: 부착된 오브젝트를 마우스 드래그로 회전 시킴.
+
+    //사용법: 회전 시킬 오브젝트에 스크립트를 부착함.
      using UnityEngine;
      using System.Collections;
       
@@ -12,7 +15,7 @@
          }
       
          void Update () { 
-            //This fires only on the frame the button is clicked
+
             if(Input.GetMouseButtonDown(0)) {
               //screenPos = myCam.WorldToScreenPoint (transform.position);
               Debug.Log(transform.position);

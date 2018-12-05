@@ -11,7 +11,7 @@ public class StarUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (Input.GetKey(KeyCode.Q)) close();
 	}
     public void close()
     {

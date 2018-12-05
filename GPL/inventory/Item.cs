@@ -10,27 +10,33 @@ public class Item : MonoBehaviour {
     public Texture2D icon;
 
     bool isUsing = false;
+    bool isAdded = false;
 
     Vector3 mousePos;
 
 	// Use this for initialization
 	void Start () {
         name = gameObject.name;
-	}
+        gameObject.tag = "SelectableWithObtain";
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
 		
 	}
-    private void OnMouseDown()
+    public void AddToInventory()
     {
-        Debug.Log("add item in inventory");
-        //클릭 시 인벤토리에 추가 후 인벤토리 리스트 업데이트 호출
-        inventory.Instance.items.Add(this);
-        inventory.Instance.inventoryUpdate(this);
+        if (isAdded == false) {
+            Debug.Log("add item in inventory");
+            //클릭 시 인벤토리에 추가 후 인벤토리 리스트 업데이트 호출
+            inventory.Instance.items.Add(this);
+            inventory.Instance.inventoryUpdate(this);
 
-        gameObject.SetActive(false);
+            gameObject.SetActive(false);
+            isAdded = true;
+        }
+       
     }
 
 }
