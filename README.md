@@ -15,21 +15,20 @@ Team GPL ![Github](https://img.shields.io/badge/opensourcesoftware-1%2C2class-re
     - 이 프로젝트는 어떻게 작동하는가 ? : 사용하려고 하는 코드(c sharp) 파일을 다운받아서 유니티에서 적용하면 됩니다. 
 - **프로젝트를 시작하는 방법**
     - 프로젝트를 설치, 사용하기 위해 필요한 전제조건이 있는가? : unity 5.5.1x version이상의 설치를 필요로 합니다. 또한 unity 3d asset store의 ArchVizPRO Interior Vol.6 를 기본 환경으로 하고 있으므로, 해당 에셋을 구입하셨다면 모든 기능을 사용하실 수 있습니다. 
-    - 어떻게 설치, 사용, 테스트하는가? : **NEED HELP!!**
 - **저작권, 라이선스 정보**
     - 어떤 라이선스로 배포되는가 ? : MIT LICENSE를 따릅니다. 
     - 상세한 라이선스 정보는 어디에서 확인할 수 있는가 ? : GIT HUB PAGE의 LICENSE 파일을 참고해 주십시오.
     - 프로젝트를 사용함에 있어 제약 조건이 있는가 ? : 없음.
 - **외부 리소스 정보**
-    - 각각의 출처 및 배포 라이선스는 무엇인가 ? : **NEED HELP!!**
+    - 각각의 출처 및 배포 라이선스는 무엇인가 ? : WIKI LINK[https://github.com/nelumbotus/Team_GPL/wiki/%EC%B5%9C%EC%A2%85-%EA%B8%B0%ED%9A%8D%EC%95%88] 
     
 ## LICENSE - MIT 
 ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
 - 기업이 사용하기를 바라지 않으며 기여한 내용이 계속해서 공개될 필요가 없으므로 MIT 라이선스를 사용하였습니다. 
 
-# ----------------ENGLISH-------------------
+#### ----------------ENGLISH-------------------
 
-## Team GPL(Gorgeous Precious Lovely) - Project guide ( 
+## Team GPL(Gorgeous Precious Lovely) - Project guide 
 
 This repository is used for opening and distributing team project's outcome. The team project was conducted in "Open Source Software Programming" class. It started in 2018/8/28 and ended in 2018/12/6. 
 
@@ -48,15 +47,14 @@ This documentation explains about overall contents of the project. Details are f
     - How can this project operate? : If you need a portion of this project, you just download or copy it and paste it on your code. Or someone wanting to use the whole function of this project, clone this repo and enjoy your game making process.
 - **How to start project**
     - Are there prerequisites for installing and using the project? : It needs installation of unity version over 5.5.1x. And also if you want to use the whole function, it's basic implementation was done on ArchVizPRO Interior Vol.6. So installing this means your ready for it.( but this is an charged asset ) We recommend you to just using the portion of code in your code.
-    - How can user install, use, test? : **NEED HELP!!!**
 - **Copyright, License information**
     - Which license are we using? : MIT LICENSE.
     - Where can user check the detail of license? : Please refer our project's LICENSE file.
     - Is there any constarints for using this project? : NO! 
 - **External Resource Information**
-    - What are the sources and distribution licenses? : **NEED HELP!!!**
+    - What are the sources and distribution licenses? : WIKI LINK [https://github.com/nelumbotus/Team_GPL/wiki/%EC%B5%9C%EC%A2%85-%EA%B8%B0%ED%9A%8D%EC%95%88]
     
 ## LICENSE - MIT
 ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
-- We used the MIT license because we didn't want to use it and we didn't have to keep the contributions open.
+- We used the MIT license because we didn't have to keep the contributions open.
     
